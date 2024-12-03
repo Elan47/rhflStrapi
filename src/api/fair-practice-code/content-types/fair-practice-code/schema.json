@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fair_practice_codes",
+  "info": {
+    "singularName": "fair-practice-code",
+    "pluralName": "fair-practice-codes",
+    "displayName": "Fair Practice Code"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Document": {
+      "type": "string"
+    },
+    "PDF": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Publishes": {
+      "type": "datetime"
+    }
+  }
+}

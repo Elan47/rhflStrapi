@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "announcements_pages",
+  "info": {
+    "singularName": "announcements-page",
+    "pluralName": "announcements-pages",
+    "displayName": "Announcements page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NewAnnouncement": {
+      "type": "boolean"
+    },
+    "File": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "ImportantAnnouncement": {
+      "type": "boolean"
+    },
+    "StartDate": {
+      "type": "date",
+      "required": true
+    },
+    "EndDate": {
+      "type": "date",
+      "required": true
+    },
+    "HasEndDate": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "disclosed_under_regulation_30s",
+  "info": {
+    "singularName": "disclosed-under-regulation-30",
+    "pluralName": "disclosed-under-regulation-30s",
+    "displayName": "Disclosed under regulation 30"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DisclosedTitle": {
+      "type": "string"
+    },
+    "DisclosedDocument": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

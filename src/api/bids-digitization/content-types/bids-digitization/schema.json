@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bids_digitizations",
+  "info": {
+    "singularName": "bids-digitization",
+    "pluralName": "bids-digitizations",
+    "displayName": "Bids Digitization"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RFPNumber": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "StartDate": {
+      "type": "datetime",
+      "default": "2021-05-01T06:30:00.000Z"
+    },
+    "EndDate": {
+      "type": "datetime",
+      "default": "2021-05-02T06:30:00.000Z"
+    },
+    "RFPDownloadFiles": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "AddendumDownloadFiles": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

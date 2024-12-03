@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investor_contacts",
+  "info": {
+    "singularName": "investor-contact",
+    "pluralName": "investor-contacts",
+    "displayName": "Investor Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ContactHeading": {
+      "type": "string",
+      "required": true
+    },
+    "ContactInformation": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

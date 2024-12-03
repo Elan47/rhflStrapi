@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locator_branches",
+  "info": {
+    "singularName": "locator-branch",
+    "pluralName": "locator-branches",
+    "displayName": "Locator Branch",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BranchName": {
+      "type": "string"
+    },
+    "BranchAddress": {
+      "type": "text"
+    },
+    "BranchContactDetails": {
+      "type": "text"
+    },
+    "BranchEmail": {
+      "type": "string"
+    },
+    "BranchLatitude": {
+      "type": "string"
+    },
+    "BranchLongitude": {
+      "type": "string"
+    },
+    "BranchIFrame": {
+      "type": "blocks"
+    },
+    "BranchStreet": {
+      "type": "text"
+    },
+    "BranchCity": {
+      "type": "string"
+    },
+    "BranchPin": {
+      "type": "string"
+    },
+    "BranchIFSC": {
+      "type": "string"
+    },
+    "BranchCode": {
+      "type": "string"
+    },
+    "BranchStatus": {
+      "type": "string"
+    },
+    "locator_state": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::locator-state.locator-state"
+    },
+    "sat_center": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sat-center.sat-center"
+    }
+  }
+}

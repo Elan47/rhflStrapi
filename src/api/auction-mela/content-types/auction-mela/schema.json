@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auction_melas",
+  "info": {
+    "singularName": "auction-mela",
+    "pluralName": "auction-melas",
+    "displayName": "Auction Mela"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property": {
+      "type": "string",
+      "required": true
+    },
+    "borrower": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "auction_region": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::auction-region.auction-region"
+    },
+    "startDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "document": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

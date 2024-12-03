@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tds_on_dividends",
+  "info": {
+    "singularName": "tds-on-dividend",
+    "pluralName": "tds-on-dividends",
+    "displayName": "TDS on Dividend"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TDSonDividend": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

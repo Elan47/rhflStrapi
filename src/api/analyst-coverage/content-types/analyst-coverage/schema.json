@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analyst_coverages",
+  "info": {
+    "singularName": "analyst-coverage",
+    "pluralName": "analyst-coverages",
+    "displayName": "Analyst Coverage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Year": {
+      "type": "string"
+    },
+    "AnalystDocument": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

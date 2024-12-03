@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unclaimed_dividends",
+  "info": {
+    "singularName": "unclaimed-dividend",
+    "pluralName": "unclaimed-dividends",
+    "displayName": "Unclaimed Dividend"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UnclaimedDividend": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "HasEndDate": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "StartDate": {
+      "type": "date",
+      "required": true
+    },
+    "EndDate": {
+      "type": "date"
+    }
+  }
+}

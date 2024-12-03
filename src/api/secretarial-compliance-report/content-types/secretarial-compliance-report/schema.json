@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "secretarial_compliance_reports",
+  "info": {
+    "singularName": "secretarial-compliance-report",
+    "pluralName": "secretarial-compliance-reports",
+    "displayName": "Secretarial Compliance Report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SecretarialTitle": {
+      "type": "string"
+    },
+    "SecretarialDocuments": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

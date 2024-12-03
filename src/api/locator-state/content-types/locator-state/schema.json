@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locator_states",
+  "info": {
+    "singularName": "locator-state",
+    "pluralName": "locator-states",
+    "displayName": "Locator State",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "State": {
+      "type": "string",
+      "required": true
+    },
+    "BranchLink": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::locator-branch.locator-branch"
+    },
+    "sat_centers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sat-center.sat-center"
+    },
+    "auction_regions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::auction-region.auction-region",
+      "mappedBy": "locator_state"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sat_centers",
+  "info": {
+    "singularName": "sat-center",
+    "pluralName": "sat-centers",
+    "displayName": "SATCenter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SatCentreName": {
+      "type": "string"
+    },
+    "SatCentreAddress": {
+      "type": "text"
+    },
+    "SatCentreIncharge": {
+      "type": "string"
+    },
+    "SatCentreContactNumber": {
+      "type": "string"
+    }
+  }
+}

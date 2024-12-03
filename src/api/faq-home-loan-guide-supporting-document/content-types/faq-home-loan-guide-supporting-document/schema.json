@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_home_loan_guide_supporting_documents",
+  "info": {
+    "singularName": "faq-home-loan-guide-supporting-document",
+    "pluralName": "faq-home-loan-guide-supporting-documents",
+    "displayName": "FAQ-Home Loan Guide Supporting Document"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQName": {
+      "type": "string",
+      "required": true
+    },
+    "FAQDescription": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

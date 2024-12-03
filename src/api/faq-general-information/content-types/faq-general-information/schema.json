@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_general_informations",
+  "info": {
+    "singularName": "faq-general-information",
+    "pluralName": "faq-general-informations",
+    "displayName": "FAQ-General Information"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQName": {
+      "type": "string",
+      "required": true
+    },
+    "FAQDescription": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

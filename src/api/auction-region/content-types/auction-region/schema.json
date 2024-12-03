@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auction_regions",
+  "info": {
+    "singularName": "auction-region",
+    "pluralName": "auction-regions",
+    "displayName": "Auction Region"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Region": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "locator_state": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::locator-state.locator-state",
+      "inversedBy": "auction_regions"
+    }
+  }
+}

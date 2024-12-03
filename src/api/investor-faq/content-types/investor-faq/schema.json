@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investor_faqs",
+  "info": {
+    "singularName": "investor-faq",
+    "pluralName": "investor-faqs",
+    "displayName": "Investor FAQ"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQName": {
+      "type": "string",
+      "required": true
+    },
+    "FAQDescription": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

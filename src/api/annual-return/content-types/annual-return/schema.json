@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "annual_returns",
+  "info": {
+    "singularName": "annual-return",
+    "pluralName": "annual-returns",
+    "displayName": "Annual Return"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AnnualReturnTitle": {
+      "type": "string"
+    },
+    "AnnualReturnDocument": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

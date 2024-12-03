@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guideline_values",
+  "info": {
+    "singularName": "guideline-value",
+    "pluralName": "guideline-values",
+    "displayName": "Guideline Value"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StateName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "LinkToGuideline": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

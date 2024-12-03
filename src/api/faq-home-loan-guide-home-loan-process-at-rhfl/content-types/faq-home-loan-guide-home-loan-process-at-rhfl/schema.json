@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_home_loan_guide_home_loan_process_at_rhfls",
+  "info": {
+    "singularName": "faq-home-loan-guide-home-loan-process-at-rhfl",
+    "pluralName": "faq-home-loan-guide-home-loan-process-at-rhfls",
+    "displayName": "FAQ-Home Loan Guide Home Loan Process At RHFL"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQName": {
+      "type": "string",
+      "required": true
+    },
+    "FAQDescription": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

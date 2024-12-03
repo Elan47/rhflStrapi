@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stat_counters",
+  "info": {
+    "singularName": "stat-counter",
+    "pluralName": "stat-counters",
+    "displayName": "StatCounter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StatTitle": {
+      "type": "string"
+    },
+    "StatValue": {
+      "type": "integer"
+    },
+    "StatIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "StatBackground": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

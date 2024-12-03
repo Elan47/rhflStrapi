@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_updates",
+  "info": {
+    "singularName": "news-update",
+    "pluralName": "news-updates",
+    "displayName": "NewsUpdates"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NewsUpdates": {
+      "type": "string",
+      "required": true
+    },
+    "NewsPDF": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "HasEndDate": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "StartDate": {
+      "type": "date",
+      "required": true
+    },
+    "EndDate": {
+      "type": "date"
+    }
+  }
+}

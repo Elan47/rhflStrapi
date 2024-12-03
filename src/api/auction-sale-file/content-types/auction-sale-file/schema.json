@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auction_sale_files",
+  "info": {
+    "singularName": "auction-sale-file",
+    "pluralName": "auction-sale-files",
+    "displayName": "Auction Sale File"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AuctionNotice": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "State": {
+      "type": "enumeration",
+      "enum": [
+        "TamilNadu",
+        "AndhraPradesh",
+        "Karnataka",
+        "Maharashtra",
+        "Gujarat",
+        "Telangana",
+        "Kerala"
+      ],
+      "required": true
+    },
+    "StartDate": {
+      "type": "date",
+      "required": true
+    },
+    "EndDate": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

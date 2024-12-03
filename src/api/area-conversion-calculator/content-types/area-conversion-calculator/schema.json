@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "area_conversion_calculators",
+  "info": {
+    "singularName": "area-conversion-calculator",
+    "pluralName": "area-conversion-calculators",
+    "displayName": "Area Conversion Calculator"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ConversionName": {
+      "type": "string",
+      "required": true
+    },
+    "ConversionValue": {
+      "type": "float"
+    }
+  }
+}

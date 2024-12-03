@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_lists",
+  "info": {
+    "singularName": "product-list",
+    "pluralName": "product-lists",
+    "displayName": "ProductList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProductName": {
+      "type": "string"
+    },
+    "ProductDescription": {
+      "type": "blocks"
+    },
+    "ProductId": {
+      "type": "uid",
+      "required": true
+    },
+    "ProductImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ProductFeatures": {
+      "type": "blocks"
+    },
+    "ProductEligibility": {
+      "type": "blocks"
+    },
+    "ProductInterestRatesAndFees": {
+      "type": "blocks"
+    },
+    "DocumentsRequired": {
+      "type": "blocks"
+    },
+    "ProductIllustration": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "ProductOrder": {
+      "type": "uid",
+      "required": true
+    },
+    "ProductPreviewText": {
+      "type": "string"
+    },
+    "IsASpecialProduct": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "SpecialProductAvailability": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}

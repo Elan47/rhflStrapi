@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stamp_duty_calculators",
+  "info": {
+    "singularName": "stamp-duty-calculator",
+    "pluralName": "stamp-duty-calculators",
+    "displayName": "Stamp Duty Calculator"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StateName": {
+      "type": "string",
+      "required": true
+    },
+    "StampDutyPercentage": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auction_sale_notices",
+  "info": {
+    "singularName": "auction-sale-notice",
+    "pluralName": "auction-sale-notices",
+    "displayName": "Auction Sale Notice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StateName": {
+      "type": "string",
+      "required": true
+    },
+    "AuctionNotices": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

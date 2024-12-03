@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "share_holding_pattern_documents",
+  "info": {
+    "singularName": "share-holding-pattern-document",
+    "pluralName": "share-holding-pattern-documents",
+    "displayName": "Share Holding Pattern Document"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Year": {
+      "type": "string"
+    },
+    "QuarterOne": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "QuarterTwo": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "QuarterThree": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "QuarterFour": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

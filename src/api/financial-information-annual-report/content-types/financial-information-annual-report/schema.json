@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "financial_information_annual_reports",
+  "info": {
+    "singularName": "financial-information-annual-report",
+    "pluralName": "financial-information-annual-reports",
+    "displayName": "Financial Information - Annual Report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AnnualReport": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

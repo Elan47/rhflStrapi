@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reach_us_cards",
+  "info": {
+    "singularName": "reach-us-card",
+    "pluralName": "reach-us-cards",
+    "displayName": "Reach Us Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CardTitle": {
+      "type": "string"
+    },
+    "CardDescription": {
+      "type": "blocks"
+    },
+    "CardImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

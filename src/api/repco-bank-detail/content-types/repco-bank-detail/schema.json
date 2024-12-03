@@ -1,0 +1,86 @@
+{
+  "kind": "singleType",
+  "collectionName": "repco_bank_details",
+  "info": {
+    "singularName": "repco-bank-detail",
+    "pluralName": "repco-bank-details",
+    "displayName": "Repco Bank Detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RepcoTitle": {
+      "type": "string"
+    },
+    "RepcoAddress": {
+      "type": "blocks"
+    },
+    "RepcoPhone": {
+      "type": "string"
+    },
+    "RepcoMobile": {
+      "type": "string"
+    },
+    "RepcoFax": {
+      "type": "string"
+    },
+    "RepcoEmail": {
+      "type": "string"
+    },
+    "RepcoTollFreeNumber": {
+      "type": "string"
+    },
+    "AboutUS": {
+      "type": "blocks"
+    },
+    "AboutUSImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "RepcoRegisteredOfficeAddress": {
+      "type": "blocks"
+    },
+    "CustomerGrievanceRedressal": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "EscalationMatrix": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "KYCPolicy": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "PrivacyPolicy": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "InterestRate": {
+      "type": "string"
+    }
+  }
+}

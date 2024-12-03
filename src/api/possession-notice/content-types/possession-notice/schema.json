@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "possession_notices",
+  "info": {
+    "singularName": "possession-notice",
+    "pluralName": "possession-notices",
+    "displayName": "Possession Notices"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pdf": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_query_complaints",
+  "info": {
+    "singularName": "faq-query-complaint",
+    "pluralName": "faq-query-complaints",
+    "displayName": "FAQ-Query-Complaint"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQName": {
+      "type": "string",
+      "required": true
+    },
+    "FAQDescription": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}
