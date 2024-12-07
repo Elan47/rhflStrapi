@@ -81,6 +81,16 @@
     },
     "InterestRate": {
       "type": "string"
+    },
+    "SocialIcons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "icon.icon"
+    },
+    "Logo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "icon.icon"
     }
   }
 }

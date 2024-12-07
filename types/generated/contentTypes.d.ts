@@ -1889,6 +1889,7 @@ export interface ApiRepcoBankDetailRepcoBankDetail
       'api::repco-bank-detail.repco-bank-detail'
     > &
       Schema.Attribute.Private;
+    Logo: Schema.Attribute.Component<'icon.icon', true>;
     PrivacyPolicy: Schema.Attribute.Media<'files'>;
     publishedAt: Schema.Attribute.DateTime;
     RepcoAddress: Schema.Attribute.Blocks;
@@ -1899,6 +1900,7 @@ export interface ApiRepcoBankDetailRepcoBankDetail
     RepcoRegisteredOfficeAddress: Schema.Attribute.Blocks;
     RepcoTitle: Schema.Attribute.String;
     RepcoTollFreeNumber: Schema.Attribute.String;
+    SocialIcons: Schema.Attribute.Component<'icon.icon', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

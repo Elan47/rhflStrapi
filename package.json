@@ -13,6 +13,7 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.4.2",
     "@strapi/plugin-users-permissions": "5.4.2",
+    "@strapi/provider-upload-aws-s3": "^5.5.0",
     "@strapi/strapi": "5.4.2",
     "mysql2": "3.9.8",
     "react": "^18.0.0",
@@ -31,6 +32,7 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "5696f78a-e932-424a-9cef-c802cb6ac5cd"
+    "uuid": "5696f78a-e932-424a-9cef-c802cb6ac5cd",
+    "telemetryDisabled": true
   }
 }
