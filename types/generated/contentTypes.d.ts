@@ -709,53 +709,6 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiCampaignLandingFormCampaignLandingForm
-  extends Struct.CollectionTypeSchema {
-  collectionName: 'campaign_landing_forms';
-  info: {
-    displayName: 'Campaign Landing Form';
-    pluralName: 'campaign-landing-forms';
-    singularName: 'campaign-landing-form';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    email: Schema.Attribute.Email;
-    loanAmount: Schema.Attribute.String;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::campaign-landing-form.campaign-landing-form'
-    > &
-      Schema.Attribute.Private;
-    location: Schema.Attribute.String & Schema.Attribute.Required;
-    mobile: Schema.Attribute.String & Schema.Attribute.Required;
-    name: Schema.Attribute.String & Schema.Attribute.Required;
-    pincode: Schema.Attribute.String & Schema.Attribute.Required;
-    publishedAt: Schema.Attribute.DateTime;
-    purpose: Schema.Attribute.Enumeration<
-      [
-        'Home Construction or Purchase',
-        'Commercial Construction or Purchase',
-        'Plot Purchase',
-        'Repairs and renovation',
-        'Loan against property',
-      ]
-    > &
-      Schema.Attribute.Required;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    utmCampaign: Schema.Attribute.String;
-    utmMedium: Schema.Attribute.String;
-    utmSrc: Schema.Attribute.String;
-  };
-}
-
 export interface ApiCareerCareer extends Struct.CollectionTypeSchema {
   collectionName: 'careers';
   info: {
@@ -1442,32 +1395,6 @@ export interface ApiHomePageCarouselHomePageCarousel
   };
 }
 
-export interface ApiIconIcon extends Struct.CollectionTypeSchema {
-  collectionName: 'icons';
-  info: {
-    displayName: 'Icon';
-    pluralName: 'icons';
-    singularName: 'icon';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    IconName: Schema.Attribute.String;
-    Icons: Schema.Attribute.Media<'images'>;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::icon.icon'> &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiIntimationToStockExchangeIntimationToStockExchange
   extends Struct.CollectionTypeSchema {
   collectionName: 'intimation_to_stock_exchanges';
@@ -1588,6 +1515,42 @@ export interface ApiInvestorFaqInvestorFaq extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiJobListingJobListing extends Struct.CollectionTypeSchema {
+  collectionName: 'job_listings';
+  info: {
+    description: '';
+    displayName: 'Job Listing';
+    pluralName: 'job-listings';
+    singularName: 'job-listing';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    ApplyOffline: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    ArchivedJob: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    BioDataForm: Schema.Attribute.Media<'images' | 'files'>;
+    CBO: Schema.Attribute.Media<'files' | 'images'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    FromDate: Schema.Attribute.Date & Schema.Attribute.Required;
+    JobTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::job-listing.job-listing'
+    > &
+      Schema.Attribute.Private;
+    NotificationDocument: Schema.Attribute.Media<'images' | 'files'>;
+    publishedAt: Schema.Attribute.DateTime;
+    ToDate: Schema.Attribute.Date;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2648,7 +2611,6 @@ declare module '@strapi/strapi' {
       'api::auction-sale-notice.auction-sale-notice': ApiAuctionSaleNoticeAuctionSaleNotice;
       'api::bids-digitization.bids-digitization': ApiBidsDigitizationBidsDigitization;
       'api::blog.blog': ApiBlogBlog;
-      'api::campaign-landing-form.campaign-landing-form': ApiCampaignLandingFormCampaignLandingForm;
       'api::career.career': ApiCareerCareer;
       'api::corporate-governance.corporate-governance': ApiCorporateGovernanceCorporateGovernance;
       'api::disclosed-under-regulation-30.disclosed-under-regulation-30': ApiDisclosedUnderRegulation30DisclosedUnderRegulation30;
@@ -2669,11 +2631,11 @@ declare module '@strapi/strapi' {
       'api::grievance-redressal.grievance-redressal': ApiGrievanceRedressalGrievanceRedressal;
       'api::guideline-value.guideline-value': ApiGuidelineValueGuidelineValue;
       'api::home-page-carousel.home-page-carousel': ApiHomePageCarouselHomePageCarousel;
-      'api::icon.icon': ApiIconIcon;
       'api::intimation-to-stock-exchange.intimation-to-stock-exchange': ApiIntimationToStockExchangeIntimationToStockExchange;
       'api::investor-calendar.investor-calendar': ApiInvestorCalendarInvestorCalendar;
       'api::investor-contact.investor-contact': ApiInvestorContactInvestorContact;
       'api::investor-faq.investor-faq': ApiInvestorFaqInvestorFaq;
+      'api::job-listing.job-listing': ApiJobListingJobListing;
       'api::locator-branch.locator-branch': ApiLocatorBranchLocatorBranch;
       'api::locator-state.locator-state': ApiLocatorStateLocatorState;
       'api::news-update.news-update': ApiNewsUpdateNewsUpdate;
