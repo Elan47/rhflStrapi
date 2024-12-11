@@ -1789,41 +1789,6 @@ export interface ApiReachUsCardReachUsCard extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiReferralProgrammeReferralProgramme
-  extends Struct.CollectionTypeSchema {
-  collectionName: 'referral_programmes';
-  info: {
-    displayName: 'ReferralProgramme';
-    pluralName: 'referral-programmes';
-    singularName: 'referral-programme';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    city: Schema.Attribute.String;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    loan_amount: Schema.Attribute.String;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::referral-programme.referral-programme'
-    > &
-      Schema.Attribute.Private;
-    member_name: Schema.Attribute.String;
-    mob_number: Schema.Attribute.String;
-    product: Schema.Attribute.String;
-    publishedAt: Schema.Attribute.DateTime;
-    ref_email: Schema.Attribute.String;
-    ref_name: Schema.Attribute.String;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiRepcoBankDetailRepcoBankDetail
   extends Struct.SingleTypeSchema {
   collectionName: 'repco_bank_details';
@@ -2642,7 +2607,6 @@ declare module '@strapi/strapi' {
       'api::possession-notice.possession-notice': ApiPossessionNoticePossessionNotice;
       'api::product-list.product-list': ApiProductListProductList;
       'api::reach-us-card.reach-us-card': ApiReachUsCardReachUsCard;
-      'api::referral-programme.referral-programme': ApiReferralProgrammeReferralProgramme;
       'api::repco-bank-detail.repco-bank-detail': ApiRepcoBankDetailRepcoBankDetail;
       'api::sat-center.sat-center': ApiSatCenterSatCenter;
       'api::secretarial-compliance-report.secretarial-compliance-report': ApiSecretarialComplianceReportSecretarialComplianceReport;
