@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AccordianAccordian extends Struct.ComponentSchema {
+  collectionName: 'components_accordian_accordians';
+  info: {
+    displayName: 'Accordian';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface IconIcon extends Struct.ComponentSchema {
   collectionName: 'components_icon_icons';
   info: {
@@ -27,6 +38,7 @@ export interface SeoSeo extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'accordian.accordian': AccordianAccordian;
       'icon.icon': IconIcon;
       'seo.seo': SeoSeo;
     }

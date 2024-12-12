@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rhfl_careers",
+  "info": {
+    "singularName": "rhfl-career",
+    "pluralName": "rhfl-careers",
+    "displayName": "RHFL Career",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "accordian": {
+      "type": "component",
+      "repeatable": true,
+      "component": "accordian.accordian"
+    },
+    "subTitle": {
+      "type": "string"
+    }
+  }
+}

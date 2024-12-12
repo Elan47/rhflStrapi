@@ -1306,6 +1306,7 @@ export interface ApiGrievanceRedressalGrievanceRedressal
   extends Struct.CollectionTypeSchema {
   collectionName: 'grievance_redressals';
   info: {
+    description: '';
     displayName: 'GrievanceRedressal';
     pluralName: 'grievance-redressals';
     singularName: 'grievance-redressal';
@@ -1319,8 +1320,6 @@ export interface ApiGrievanceRedressalGrievanceRedressal
       Schema.Attribute.Private;
     CustomerGrievanceRedressal: Schema.Attribute.Media<'files'>;
     EscalationMatrix: Schema.Attribute.Media<'files'>;
-    GrievanceInformationLeft: Schema.Attribute.Blocks;
-    GrievanceInformationRight: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1328,6 +1327,7 @@ export interface ApiGrievanceRedressalGrievanceRedressal
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1370,6 +1370,7 @@ export interface ApiHomePageCarouselHomePageCarousel
   extends Struct.CollectionTypeSchema {
   collectionName: 'home_page_carousels';
   info: {
+    description: '';
     displayName: 'HomePageCarousel';
     pluralName: 'home-page-carousels';
     singularName: 'home-page-carousel';
@@ -1378,10 +1379,12 @@ export interface ApiHomePageCarouselHomePageCarousel
     draftAndPublish: true;
   };
   attributes: {
-    carousel: Schema.Attribute.Media<'images' | 'videos', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    img: Schema.Attribute.Media<'images' | 'videos'> &
+      Schema.Attribute.Required;
+    link: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1789,6 +1792,35 @@ export interface ApiReachUsCardReachUsCard extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiRecoveryAgencyRecoveryAgency
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'recovery_agencies';
+  info: {
+    displayName: 'Recovery Agency';
+    pluralName: 'recovery-agencies';
+    singularName: 'recovery-agency';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    json: Schema.Attribute.JSON;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::recovery-agency.recovery-agency'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiRepcoBankDetailRepcoBankDetail
   extends Struct.SingleTypeSchema {
   collectionName: 'repco_bank_details';
@@ -1829,6 +1861,37 @@ export interface ApiRepcoBankDetailRepcoBankDetail
     RepcoTitle: Schema.Attribute.String;
     RepcoTollFreeNumber: Schema.Attribute.String;
     SocialIcons: Schema.Attribute.Component<'icon.icon', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRhflCareerRhflCareer extends Struct.CollectionTypeSchema {
+  collectionName: 'rhfl_careers';
+  info: {
+    description: '';
+    displayName: 'RHFL Career';
+    pluralName: 'rhfl-careers';
+    singularName: 'rhfl-career';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accordian: Schema.Attribute.Component<'accordian.accordian', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rhfl-career.rhfl-career'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subTitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2607,7 +2670,9 @@ declare module '@strapi/strapi' {
       'api::possession-notice.possession-notice': ApiPossessionNoticePossessionNotice;
       'api::product-list.product-list': ApiProductListProductList;
       'api::reach-us-card.reach-us-card': ApiReachUsCardReachUsCard;
+      'api::recovery-agency.recovery-agency': ApiRecoveryAgencyRecoveryAgency;
       'api::repco-bank-detail.repco-bank-detail': ApiRepcoBankDetailRepcoBankDetail;
+      'api::rhfl-career.rhfl-career': ApiRhflCareerRhflCareer;
       'api::sat-center.sat-center': ApiSatCenterSatCenter;
       'api::secretarial-compliance-report.secretarial-compliance-report': ApiSecretarialComplianceReportSecretarialComplianceReport;
       'api::share-holding-pattern-document.share-holding-pattern-document': ApiShareHoldingPatternDocumentShareHoldingPatternDocument;

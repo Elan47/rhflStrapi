@@ -4,32 +4,33 @@
   "info": {
     "singularName": "grievance-redressal",
     "pluralName": "grievance-redressals",
-    "displayName": "GrievanceRedressal"
+    "displayName": "GrievanceRedressal",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "GrievanceInformationLeft": {
-      "type": "blocks"
-    },
     "CustomerGrievanceRedressal": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "EscalationMatrix": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "GrievanceInformationRight": {
-      "type": "blocks"
+    "title": {
+      "type": "string",
+      "required": true
     }
   }
 }

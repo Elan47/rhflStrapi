@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recovery_agencies",
+  "info": {
+    "singularName": "recovery-agency",
+    "pluralName": "recovery-agencies",
+    "displayName": "Recovery Agency"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "json": {
+      "type": "json"
+    }
+  }
+}

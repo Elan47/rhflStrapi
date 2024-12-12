@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_accordian_accordians",
+  "info": {
+    "displayName": "Accordian"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}
