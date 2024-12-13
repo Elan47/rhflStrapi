@@ -11,11 +11,11 @@
     "description": {
       "type": "text"
     },
+    "keyword": {
+      "type": "text"
+    },
     "richTxt": {
       "type": "richtext"
-    },
-    "keywords": {
-      "type": "text"
     }
   }
 }

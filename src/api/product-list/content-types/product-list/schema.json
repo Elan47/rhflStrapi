@@ -15,9 +15,6 @@
     "ProductName": {
       "type": "string"
     },
-    "ProductDescription": {
-      "type": "richtext"
-    },
     "ProductId": {
       "type": "uid",
       "required": true
@@ -29,18 +26,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "ProductFeatures": {
-      "type": "richtext"
-    },
-    "ProductEligibility": {
-      "type": "richtext"
-    },
-    "ProductInterestRatesAndFees": {
-      "type": "richtext"
-    },
-    "DocumentsRequired": {
-      "type": "richtext"
     },
     "ProductIllustration": {
       "type": "media",
@@ -68,10 +53,20 @@
       "default": false,
       "required": true
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "seo.seo"
+    "ProductDescription": {
+      "type": "richtext"
+    },
+    "ProductFeatures": {
+      "type": "richtext"
+    },
+    "ProductEligibility": {
+      "type": "richtext"
+    },
+    "ProductInterestRatesAndFees": {
+      "type": "richtext"
+    },
+    "DocumentsRequired": {
+      "type": "richtext"
     }
   }
 }

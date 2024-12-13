@@ -4,7 +4,8 @@
   "info": {
     "singularName": "reach-us-card",
     "pluralName": "reach-us-cards",
-    "displayName": "Reach Us Card"
+    "displayName": "Reach Us Card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,11 +19,15 @@
       "type": "richtext"
     },
     "CardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "CardDescription1": {
+      "type": "richtext"
     }
   }
 }

@@ -695,12 +695,13 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     date: Schema.Attribute.DateTime;
     Description: Schema.Attribute.RichText;
+    Description1: Schema.Attribute.RichText;
     Featured_img: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'seo.seo', false>;
+    Seo: Schema.Attribute.Component<'seo.seo', false>;
     slug: Schema.Attribute.UID<'Title'>;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -742,6 +743,7 @@ export interface ApiCorporateGovernanceCorporateGovernance
   extends Struct.CollectionTypeSchema {
   collectionName: 'corporate_governances';
   info: {
+    description: '';
     displayName: ' Corporate Governance';
     pluralName: 'corporate-governances';
     singularName: 'corporate-governance';
@@ -778,6 +780,7 @@ export interface ApiCorporateGovernanceCorporateGovernance
     >;
     SectionHeading: Schema.Attribute.String & Schema.Attribute.Required;
     SectionText: Schema.Attribute.RichText;
+    SectionText1: Schema.Attribute.RichText;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -913,6 +916,7 @@ export interface ApiFaqGeneralInformationFaqGeneralInformation
   extends Struct.CollectionTypeSchema {
   collectionName: 'faq_general_informations';
   info: {
+    description: '';
     displayName: 'FAQ-General Information';
     pluralName: 'faq-general-informations';
     singularName: 'faq-general-information';
@@ -921,11 +925,10 @@ export interface ApiFaqGeneralInformationFaqGeneralInformation
     draftAndPublish: true;
   };
   attributes: {
+    Accordian: Schema.Attribute.Component<'accordian.accordian', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
-    FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -943,6 +946,7 @@ export interface ApiFaqHomeLoanGuideHomeLoanProcessAtRhflFaqHomeLoanGuideHomeLoa
   extends Struct.CollectionTypeSchema {
   collectionName: 'faq_home_loan_guide_home_loan_process_at_rhfls';
   info: {
+    description: '';
     displayName: 'FAQ-Home Loan Guide Home Loan Process At RHFL';
     pluralName: 'faq-home-loan-guide-home-loan-process-at-rhfls';
     singularName: 'faq-home-loan-guide-home-loan-process-at-rhfl';
@@ -951,11 +955,10 @@ export interface ApiFaqHomeLoanGuideHomeLoanProcessAtRhflFaqHomeLoanGuideHomeLoa
     draftAndPublish: true;
   };
   attributes: {
+    Accordian: Schema.Attribute.Component<'accordian.accordian', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
-    FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -973,6 +976,7 @@ export interface ApiFaqHomeLoanGuideSupportingDocumentFaqHomeLoanGuideSupporting
   extends Struct.CollectionTypeSchema {
   collectionName: 'faq_home_loan_guide_supporting_documents';
   info: {
+    description: '';
     displayName: 'FAQ-Home Loan Guide Supporting Document';
     pluralName: 'faq-home-loan-guide-supporting-documents';
     singularName: 'faq-home-loan-guide-supporting-document';
@@ -981,11 +985,10 @@ export interface ApiFaqHomeLoanGuideSupportingDocumentFaqHomeLoanGuideSupporting
     draftAndPublish: true;
   };
   attributes: {
+    Accordian: Schema.Attribute.Component<'accordian.accordian', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
-    FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1003,6 +1006,7 @@ export interface ApiFaqHomeLoanGuideTaxBenefitFaqHomeLoanGuideTaxBenefit
   extends Struct.CollectionTypeSchema {
   collectionName: 'faq_home_loan_guide_tax_benefits';
   info: {
+    description: '';
     displayName: 'FAQ-Home Loan Guide Tax Benefit';
     pluralName: 'faq-home-loan-guide-tax-benefits';
     singularName: 'faq-home-loan-guide-tax-benefit';
@@ -1011,11 +1015,10 @@ export interface ApiFaqHomeLoanGuideTaxBenefitFaqHomeLoanGuideTaxBenefit
     draftAndPublish: true;
   };
   attributes: {
+    Accordian: Schema.Attribute.Component<'accordian.accordian', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
-    FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1033,6 +1036,7 @@ export interface ApiFaqQueryComplaintFaqQueryComplaint
   extends Struct.CollectionTypeSchema {
   collectionName: 'faq_query_complaints';
   info: {
+    description: '';
     displayName: 'FAQ-Query-Complaint';
     pluralName: 'faq-query-complaints';
     singularName: 'faq-query-complaint';
@@ -1041,11 +1045,10 @@ export interface ApiFaqQueryComplaintFaqQueryComplaint
     draftAndPublish: true;
   };
   attributes: {
+    Accordian: Schema.Attribute.Component<'accordian.accordian', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
-    FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1469,6 +1472,7 @@ export interface ApiInvestorContactInvestorContact
   extends Struct.CollectionTypeSchema {
   collectionName: 'investor_contacts';
   info: {
+    description: '';
     displayName: 'Investor Contact';
     pluralName: 'investor-contacts';
     singularName: 'investor-contact';
@@ -1479,6 +1483,7 @@ export interface ApiInvestorContactInvestorContact
   attributes: {
     ContactHeading: Schema.Attribute.String & Schema.Attribute.Required;
     ContactInformation: Schema.Attribute.RichText & Schema.Attribute.Required;
+    ContactInformation1: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1498,6 +1503,7 @@ export interface ApiInvestorContactInvestorContact
 export interface ApiInvestorFaqInvestorFaq extends Struct.CollectionTypeSchema {
   collectionName: 'investor_faqs';
   info: {
+    description: '';
     displayName: 'Investor FAQ';
     pluralName: 'investor-faqs';
     singularName: 'investor-faq';
@@ -1506,11 +1512,10 @@ export interface ApiInvestorFaqInvestorFaq extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Accordian: Schema.Attribute.Component<'accordian.accordian', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
-    FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1579,6 +1584,7 @@ export interface ApiLocatorBranchLocatorBranch
     BranchContactDetails: Schema.Attribute.Text;
     BranchEmail: Schema.Attribute.String;
     BranchIFrame: Schema.Attribute.RichText;
+    BranchIFrame1: Schema.Attribute.RichText;
     BranchIFSC: Schema.Attribute.String;
     BranchLatitude: Schema.Attribute.String;
     BranchLongitude: Schema.Attribute.String;
@@ -1752,7 +1758,6 @@ export interface ApiProductListProductList extends Struct.CollectionTypeSchema {
     ProductOrder: Schema.Attribute.UID & Schema.Attribute.Required;
     ProductPreviewText: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'seo.seo', false>;
     SpecialProductAvailability: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<false>;
@@ -1765,6 +1770,7 @@ export interface ApiProductListProductList extends Struct.CollectionTypeSchema {
 export interface ApiReachUsCardReachUsCard extends Struct.CollectionTypeSchema {
   collectionName: 'reach_us_cards';
   info: {
+    description: '';
     displayName: 'Reach Us Card';
     pluralName: 'reach-us-cards';
     singularName: 'reach-us-card';
@@ -1774,6 +1780,7 @@ export interface ApiReachUsCardReachUsCard extends Struct.CollectionTypeSchema {
   };
   attributes: {
     CardDescription: Schema.Attribute.RichText;
+    CardDescription1: Schema.Attribute.RichText;
     CardImage: Schema.Attribute.Media<'images'>;
     CardTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
@@ -1879,7 +1886,7 @@ export interface ApiRhflCareerRhflCareer extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    accordian: Schema.Attribute.Component<'accordian.accordian', true>;
+    Accordian: Schema.Attribute.Component<'accordian.accordian', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

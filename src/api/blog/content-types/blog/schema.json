@@ -33,7 +33,10 @@
       "type": "uid",
       "targetField": "Title"
     },
-    "seo": {
+    "Description1": {
+      "type": "richtext"
+    },
+    "Seo": {
       "type": "component",
       "repeatable": false,
       "component": "seo.seo"

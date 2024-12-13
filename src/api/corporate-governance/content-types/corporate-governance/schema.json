@@ -4,7 +4,8 @@
   "info": {
     "singularName": "corporate-governance",
     "pluralName": "corporate-governances",
-    "displayName": " Corporate Governance"
+    "displayName": " Corporate Governance",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,18 +17,18 @@
       "required": true
     },
     "SectionText": {
-     "type":"richtext"
-
+      "type": "richtext"
     },
     "SectionDownloads": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "IsSectionAccordion": {
       "type": "boolean",
@@ -35,58 +36,67 @@
       "required": true
     },
     "BusinessReponsibilityReport": {
-      "allowedTypes": [
-        "files"
-      ],
       "type": "media",
       "multiple": true,
-      "required": false
-    },
-    "Codes": {
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
+      ]
+    },
+    "Codes": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
     },
     "FamiliarizationProgrammes": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Letters": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Policies": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Others": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Vids": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "SectionText1": {
+      "type": "richtext"
     }
   }
 }

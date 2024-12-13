@@ -15,9 +15,6 @@
     "RepcoTitle": {
       "type": "string"
     },
-    "RepcoAddress": {
-      "type": "richtext"
-    },
     "RepcoPhone": {
       "type": "string"
     },
@@ -33,9 +30,6 @@
     "RepcoTollFreeNumber": {
       "type": "string"
     },
-    "AboutUS": {
-      "type": "richtext"
-    },
     "AboutUSImages": {
       "type": "media",
       "multiple": true,
@@ -43,9 +37,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "RepcoRegisteredOfficeAddress": {
-      "type": "richtext"
     },
     "CustomerGrievanceRedressal": {
       "type": "media",
@@ -91,6 +82,15 @@
       "type": "component",
       "repeatable": true,
       "component": "icon.icon"
+    },
+    "RepcoAddress": {
+      "type": "richtext"
+    },
+    "AboutUS": {
+      "type": "richtext"
+    },
+    "RepcoRegisteredOfficeAddress": {
+      "type": "richtext"
     }
   }
 }

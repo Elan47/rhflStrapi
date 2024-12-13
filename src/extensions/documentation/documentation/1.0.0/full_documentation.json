@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-12-13T07:03:20.103Z"
+    "x-generation-date": "2024-12-13T11:53:46.538Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -31170,6 +31170,9 @@
                             }
                           }
                         },
+                        "BranchIFrame1": {
+                          "type": "string"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -32388,6 +32391,9 @@
                           }
                         }
                       }
+                    },
+                    "BranchIFrame1": {
+                      "type": "string"
                     },
                     "createdAt": {
                       "type": "string",
@@ -35876,7 +35882,10 @@
               "slug": {
                 "type": "string"
               },
-              "seo": {
+              "Description1": {
+                "type": "string"
+              },
+              "Seo": {
                 "$ref": "#/components/schemas/SeoSeoComponent"
               },
               "locale": {
@@ -36555,7 +36564,10 @@
           "slug": {
             "type": "string"
           },
-          "seo": {
+          "Description1": {
+            "type": "string"
+          },
+          "Seo": {
             "$ref": "#/components/schemas/SeoSeoComponent"
           },
           "createdAt": {
@@ -36748,7 +36760,10 @@
                 "slug": {
                   "type": "string"
                 },
-                "seo": {
+                "Description1": {
+                  "type": "string"
+                },
+                "Seo": {
                   "$ref": "#/components/schemas/SeoSeoComponent"
                 },
                 "createdAt": {
@@ -36830,10 +36845,10 @@
           "description": {
             "type": "string"
           },
-          "richTxt": {
+          "keyword": {
             "type": "string"
           },
-          "keywords": {
+          "richTxt": {
             "type": "string"
           }
         }
@@ -37915,6 +37930,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "SectionText1": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -39519,6 +39537,9 @@
               }
             }
           },
+          "SectionText1": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -40631,6 +40652,9 @@
                       }
                     }
                   }
+                },
+                "SectionText1": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -44021,17 +44045,13 @@
         ],
         "properties": {
           "data": {
-            "required": [
-              "FAQName",
-              "FAQDescription"
-            ],
             "type": "object",
             "properties": {
-              "FAQName": {
-                "type": "string"
-              },
-              "FAQDescription": {
-                "type": "string"
+              "Accordian": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AccordianAccordianComponent"
+                }
               },
               "locale": {
                 "type": "string"
@@ -44091,10 +44111,6 @@
       },
       "FaqGeneralInformation": {
         "type": "object",
-        "required": [
-          "FAQName",
-          "FAQDescription"
-        ],
         "properties": {
           "id": {
             "type": "number"
@@ -44102,11 +44118,11 @@
           "documentId": {
             "type": "string"
           },
-          "FAQName": {
-            "type": "string"
-          },
-          "FAQDescription": {
-            "type": "string"
+          "Accordian": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccordianAccordianComponent"
+            }
           },
           "createdAt": {
             "type": "string",
@@ -44408,11 +44424,11 @@
                 "documentId": {
                   "type": "string"
                 },
-                "FAQName": {
-                  "type": "string"
-                },
-                "FAQDescription": {
-                  "type": "string"
+                "Accordian": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccordianAccordianComponent"
+                  }
                 },
                 "createdAt": {
                   "type": "string",
@@ -44481,6 +44497,20 @@
           }
         }
       },
+      "AccordianAccordianComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          }
+        }
+      },
       "FaqHomeLoanGuideHomeLoanProcessAtRhflRequest": {
         "type": "object",
         "required": [
@@ -44488,17 +44518,13 @@
         ],
         "properties": {
           "data": {
-            "required": [
-              "FAQName",
-              "FAQDescription"
-            ],
             "type": "object",
             "properties": {
-              "FAQName": {
-                "type": "string"
-              },
-              "FAQDescription": {
-                "type": "string"
+              "Accordian": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AccordianAccordianComponent"
+                }
               },
               "locale": {
                 "type": "string"
@@ -44558,10 +44584,6 @@
       },
       "FaqHomeLoanGuideHomeLoanProcessAtRhfl": {
         "type": "object",
-        "required": [
-          "FAQName",
-          "FAQDescription"
-        ],
         "properties": {
           "id": {
             "type": "number"
@@ -44569,11 +44591,11 @@
           "documentId": {
             "type": "string"
           },
-          "FAQName": {
-            "type": "string"
-          },
-          "FAQDescription": {
-            "type": "string"
+          "Accordian": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccordianAccordianComponent"
+            }
           },
           "createdAt": {
             "type": "string",
@@ -44875,11 +44897,11 @@
                 "documentId": {
                   "type": "string"
                 },
-                "FAQName": {
-                  "type": "string"
-                },
-                "FAQDescription": {
-                  "type": "string"
+                "Accordian": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccordianAccordianComponent"
+                  }
                 },
                 "createdAt": {
                   "type": "string",
@@ -44955,17 +44977,13 @@
         ],
         "properties": {
           "data": {
-            "required": [
-              "FAQName",
-              "FAQDescription"
-            ],
             "type": "object",
             "properties": {
-              "FAQName": {
-                "type": "string"
-              },
-              "FAQDescription": {
-                "type": "string"
+              "Accordian": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AccordianAccordianComponent"
+                }
               },
               "locale": {
                 "type": "string"
@@ -45025,10 +45043,6 @@
       },
       "FaqHomeLoanGuideSupportingDocument": {
         "type": "object",
-        "required": [
-          "FAQName",
-          "FAQDescription"
-        ],
         "properties": {
           "id": {
             "type": "number"
@@ -45036,11 +45050,11 @@
           "documentId": {
             "type": "string"
           },
-          "FAQName": {
-            "type": "string"
-          },
-          "FAQDescription": {
-            "type": "string"
+          "Accordian": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccordianAccordianComponent"
+            }
           },
           "createdAt": {
             "type": "string",
@@ -45342,11 +45356,11 @@
                 "documentId": {
                   "type": "string"
                 },
-                "FAQName": {
-                  "type": "string"
-                },
-                "FAQDescription": {
-                  "type": "string"
+                "Accordian": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccordianAccordianComponent"
+                  }
                 },
                 "createdAt": {
                   "type": "string",
@@ -45422,17 +45436,13 @@
         ],
         "properties": {
           "data": {
-            "required": [
-              "FAQName",
-              "FAQDescription"
-            ],
             "type": "object",
             "properties": {
-              "FAQName": {
-                "type": "string"
-              },
-              "FAQDescription": {
-                "type": "string"
+              "Accordian": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AccordianAccordianComponent"
+                }
               },
               "locale": {
                 "type": "string"
@@ -45492,10 +45502,6 @@
       },
       "FaqHomeLoanGuideTaxBenefit": {
         "type": "object",
-        "required": [
-          "FAQName",
-          "FAQDescription"
-        ],
         "properties": {
           "id": {
             "type": "number"
@@ -45503,11 +45509,11 @@
           "documentId": {
             "type": "string"
           },
-          "FAQName": {
-            "type": "string"
-          },
-          "FAQDescription": {
-            "type": "string"
+          "Accordian": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccordianAccordianComponent"
+            }
           },
           "createdAt": {
             "type": "string",
@@ -45809,11 +45815,11 @@
                 "documentId": {
                   "type": "string"
                 },
-                "FAQName": {
-                  "type": "string"
-                },
-                "FAQDescription": {
-                  "type": "string"
+                "Accordian": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccordianAccordianComponent"
+                  }
                 },
                 "createdAt": {
                   "type": "string",
@@ -45889,17 +45895,13 @@
         ],
         "properties": {
           "data": {
-            "required": [
-              "FAQName",
-              "FAQDescription"
-            ],
             "type": "object",
             "properties": {
-              "FAQName": {
-                "type": "string"
-              },
-              "FAQDescription": {
-                "type": "string"
+              "Accordian": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AccordianAccordianComponent"
+                }
               },
               "locale": {
                 "type": "string"
@@ -45959,10 +45961,6 @@
       },
       "FaqQueryComplaint": {
         "type": "object",
-        "required": [
-          "FAQName",
-          "FAQDescription"
-        ],
         "properties": {
           "id": {
             "type": "number"
@@ -45970,11 +45968,11 @@
           "documentId": {
             "type": "string"
           },
-          "FAQName": {
-            "type": "string"
-          },
-          "FAQDescription": {
-            "type": "string"
+          "Accordian": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccordianAccordianComponent"
+            }
           },
           "createdAt": {
             "type": "string",
@@ -46276,11 +46274,11 @@
                 "documentId": {
                   "type": "string"
                 },
-                "FAQName": {
-                  "type": "string"
-                },
-                "FAQDescription": {
-                  "type": "string"
+                "Accordian": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccordianAccordianComponent"
+                  }
                 },
                 "createdAt": {
                   "type": "string",
@@ -61296,6 +61294,9 @@
               "ContactInformation": {
                 "type": "string"
               },
+              "ContactInformation1": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -61369,6 +61370,9 @@
             "type": "string"
           },
           "ContactInformation": {
+            "type": "string"
+          },
+          "ContactInformation1": {
             "type": "string"
           },
           "createdAt": {
@@ -61677,6 +61681,9 @@
                 "ContactInformation": {
                   "type": "string"
                 },
+                "ContactInformation1": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -61751,17 +61758,13 @@
         ],
         "properties": {
           "data": {
-            "required": [
-              "FAQName",
-              "FAQDescription"
-            ],
             "type": "object",
             "properties": {
-              "FAQName": {
-                "type": "string"
-              },
-              "FAQDescription": {
-                "type": "string"
+              "Accordian": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AccordianAccordianComponent"
+                }
               },
               "locale": {
                 "type": "string"
@@ -61821,10 +61824,6 @@
       },
       "InvestorFaq": {
         "type": "object",
-        "required": [
-          "FAQName",
-          "FAQDescription"
-        ],
         "properties": {
           "id": {
             "type": "number"
@@ -61832,11 +61831,11 @@
           "documentId": {
             "type": "string"
           },
-          "FAQName": {
-            "type": "string"
-          },
-          "FAQDescription": {
-            "type": "string"
+          "Accordian": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AccordianAccordianComponent"
+            }
           },
           "createdAt": {
             "type": "string",
@@ -62138,11 +62137,11 @@
                 "documentId": {
                   "type": "string"
                 },
-                "FAQName": {
-                  "type": "string"
-                },
-                "FAQDescription": {
-                  "type": "string"
+                "Accordian": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccordianAccordianComponent"
+                  }
                 },
                 "createdAt": {
                   "type": "string",
@@ -63803,6 +63802,9 @@
                 ],
                 "example": "string or id"
               },
+              "BranchIFrame1": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -64306,6 +64308,9 @@
                         }
                       }
                     },
+                    "BranchIFrame1": {
+                      "type": "string"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -64516,6 +64521,9 @@
                 "type": "string"
               }
             }
+          },
+          "BranchIFrame1": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -65256,6 +65264,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "BranchIFrame1": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -67348,9 +67359,6 @@
               "ProductName": {
                 "type": "string"
               },
-              "ProductDescription": {
-                "type": "string"
-              },
               "ProductId": {
                 "type": "string"
               },
@@ -67364,18 +67372,6 @@
                   }
                 ],
                 "example": "string or id"
-              },
-              "ProductFeatures": {
-                "type": "string"
-              },
-              "ProductEligibility": {
-                "type": "string"
-              },
-              "ProductInterestRatesAndFees": {
-                "type": "string"
-              },
-              "DocumentsRequired": {
-                "type": "string"
               },
               "ProductIllustration": {
                 "oneOf": [
@@ -67400,8 +67396,20 @@
               "SpecialProductAvailability": {
                 "type": "boolean"
               },
-              "seo": {
-                "$ref": "#/components/schemas/SeoSeoComponent"
+              "ProductDescription": {
+                "type": "string"
+              },
+              "ProductFeatures": {
+                "type": "string"
+              },
+              "ProductEligibility": {
+                "type": "string"
+              },
+              "ProductInterestRatesAndFees": {
+                "type": "string"
+              },
+              "DocumentsRequired": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -67476,9 +67484,6 @@
             "type": "string"
           },
           "ProductName": {
-            "type": "string"
-          },
-          "ProductDescription": {
             "type": "string"
           },
           "ProductId": {
@@ -68082,18 +68087,6 @@
               }
             }
           },
-          "ProductFeatures": {
-            "type": "string"
-          },
-          "ProductEligibility": {
-            "type": "string"
-          },
-          "ProductInterestRatesAndFees": {
-            "type": "string"
-          },
-          "DocumentsRequired": {
-            "type": "string"
-          },
           "ProductIllustration": {
             "type": "object",
             "properties": {
@@ -68235,8 +68228,20 @@
           "SpecialProductAvailability": {
             "type": "boolean"
           },
-          "seo": {
-            "$ref": "#/components/schemas/SeoSeoComponent"
+          "ProductDescription": {
+            "type": "string"
+          },
+          "ProductFeatures": {
+            "type": "string"
+          },
+          "ProductEligibility": {
+            "type": "string"
+          },
+          "ProductInterestRatesAndFees": {
+            "type": "string"
+          },
+          "DocumentsRequired": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -68287,9 +68292,6 @@
                   "type": "string"
                 },
                 "ProductName": {
-                  "type": "string"
-                },
-                "ProductDescription": {
                   "type": "string"
                 },
                 "ProductId": {
@@ -68423,18 +68425,6 @@
                       }
                     }
                   }
-                },
-                "ProductFeatures": {
-                  "type": "string"
-                },
-                "ProductEligibility": {
-                  "type": "string"
-                },
-                "ProductInterestRatesAndFees": {
-                  "type": "string"
-                },
-                "DocumentsRequired": {
-                  "type": "string"
                 },
                 "ProductIllustration": {
                   "type": "object",
@@ -68577,8 +68567,20 @@
                 "SpecialProductAvailability": {
                   "type": "boolean"
                 },
-                "seo": {
-                  "$ref": "#/components/schemas/SeoSeoComponent"
+                "ProductDescription": {
+                  "type": "string"
+                },
+                "ProductFeatures": {
+                  "type": "string"
+                },
+                "ProductEligibility": {
+                  "type": "string"
+                },
+                "ProductInterestRatesAndFees": {
+                  "type": "string"
+                },
+                "DocumentsRequired": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -68672,6 +68674,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "CardDescription1": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -69342,6 +69347,9 @@
               }
             }
           },
+          "CardDescription1": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -69524,6 +69532,9 @@
                       }
                     }
                   }
+                },
+                "CardDescription1": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -70048,9 +70059,6 @@
               "RepcoTitle": {
                 "type": "string"
               },
-              "RepcoAddress": {
-                "type": "string"
-              },
               "RepcoPhone": {
                 "type": "string"
               },
@@ -70066,9 +70074,6 @@
               "RepcoTollFreeNumber": {
                 "type": "string"
               },
-              "AboutUS": {
-                "type": "string"
-              },
               "AboutUSImages": {
                 "type": "array",
                 "items": {
@@ -70082,9 +70087,6 @@
                   ],
                   "example": "string or id"
                 }
-              },
-              "RepcoRegisteredOfficeAddress": {
-                "type": "string"
               },
               "CustomerGrievanceRedressal": {
                 "oneOf": [
@@ -70144,6 +70146,15 @@
                 "items": {
                   "$ref": "#/components/schemas/IconIconComponent"
                 }
+              },
+              "RepcoAddress": {
+                "type": "string"
+              },
+              "AboutUS": {
+                "type": "string"
+              },
+              "RepcoRegisteredOfficeAddress": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -70213,9 +70224,6 @@
           "RepcoTitle": {
             "type": "string"
           },
-          "RepcoAddress": {
-            "type": "string"
-          },
           "RepcoPhone": {
             "type": "string"
           },
@@ -70229,9 +70237,6 @@
             "type": "string"
           },
           "RepcoTollFreeNumber": {
-            "type": "string"
-          },
-          "AboutUS": {
             "type": "string"
           },
           "AboutUSImages": {
@@ -70835,9 +70840,6 @@
               }
             }
           },
-          "RepcoRegisteredOfficeAddress": {
-            "type": "string"
-          },
           "CustomerGrievanceRedressal": {
             "type": "object",
             "properties": {
@@ -71369,6 +71371,15 @@
               "$ref": "#/components/schemas/IconIconComponent"
             }
           },
+          "RepcoAddress": {
+            "type": "string"
+          },
+          "AboutUS": {
+            "type": "string"
+          },
+          "RepcoRegisteredOfficeAddress": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -71420,9 +71431,6 @@
                 "RepcoTitle": {
                   "type": "string"
                 },
-                "RepcoAddress": {
-                  "type": "string"
-                },
                 "RepcoPhone": {
                   "type": "string"
                 },
@@ -71436,9 +71444,6 @@
                   "type": "string"
                 },
                 "RepcoTollFreeNumber": {
-                  "type": "string"
-                },
-                "AboutUS": {
                   "type": "string"
                 },
                 "AboutUSImages": {
@@ -71572,9 +71577,6 @@
                       }
                     }
                   }
-                },
-                "RepcoRegisteredOfficeAddress": {
-                  "type": "string"
                 },
                 "CustomerGrievanceRedressal": {
                   "type": "object",
@@ -72107,6 +72109,15 @@
                     "$ref": "#/components/schemas/IconIconComponent"
                   }
                 },
+                "RepcoAddress": {
+                  "type": "string"
+                },
+                "AboutUS": {
+                  "type": "string"
+                },
+                "RepcoRegisteredOfficeAddress": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -72329,14 +72340,14 @@
               "title": {
                 "type": "string"
               },
-              "accordian": {
+              "subTitle": {
+                "type": "string"
+              },
+              "Accordian": {
                 "type": "array",
                 "items": {
                   "$ref": "#/components/schemas/AccordianAccordianComponent"
                 }
-              },
-              "subTitle": {
-                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -72409,14 +72420,14 @@
           "title": {
             "type": "string"
           },
-          "accordian": {
+          "subTitle": {
+            "type": "string"
+          },
+          "Accordian": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/AccordianAccordianComponent"
             }
-          },
-          "subTitle": {
-            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -72721,14 +72732,14 @@
                 "title": {
                   "type": "string"
                 },
-                "accordian": {
+                "subTitle": {
+                  "type": "string"
+                },
+                "Accordian": {
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/AccordianAccordianComponent"
                   }
-                },
-                "subTitle": {
-                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -72794,20 +72805,6 @@
           },
           "meta": {
             "type": "object"
-          }
-        }
-      },
-      "AccordianAccordianComponent": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
           }
         }
       },

@@ -4,20 +4,18 @@
   "info": {
     "singularName": "faq-home-loan-guide-tax-benefit",
     "pluralName": "faq-home-loan-guide-tax-benefits",
-    "displayName": "FAQ-Home Loan Guide Tax Benefit"
+    "displayName": "FAQ-Home Loan Guide Tax Benefit",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "FAQName": {
-      "type": "string",
-      "required": true
-    },
-    "FAQDescription": {
-      "type": "richtext",
-      "required": true
+    "Accordian": {
+      "type": "component",
+      "repeatable": true,
+      "component": "accordian.accordian"
     }
   }
 }

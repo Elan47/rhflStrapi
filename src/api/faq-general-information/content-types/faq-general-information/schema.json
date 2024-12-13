@@ -4,20 +4,18 @@
   "info": {
     "singularName": "faq-general-information",
     "pluralName": "faq-general-informations",
-    "displayName": "FAQ-General Information"
+    "displayName": "FAQ-General Information",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "FAQName": {
-      "type": "string",
-      "required": true
-    },
-    "FAQDescription": {
-      "type": "richtext",
-      "required": true
+    "Accordian": {
+      "type": "component",
+      "repeatable": true,
+      "component": "accordian.accordian"
     }
   }
 }

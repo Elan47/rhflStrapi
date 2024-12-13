@@ -6,8 +6,8 @@ export interface AccordianAccordian extends Struct.ComponentSchema {
     displayName: 'Accordian';
   };
   attributes: {
-    description: Schema.Attribute.RichText;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    content: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -29,7 +29,7 @@ export interface SeoSeo extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    keywords: Schema.Attribute.Text;
+    keyword: Schema.Attribute.Text;
     richTxt: Schema.Attribute.RichText;
     title: Schema.Attribute.String;
   };

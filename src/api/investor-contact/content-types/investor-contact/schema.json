@@ -4,7 +4,8 @@
   "info": {
     "singularName": "investor-contact",
     "pluralName": "investor-contacts",
-    "displayName": "Investor Contact"
+    "displayName": "Investor Contact",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,9 @@
     "ContactInformation": {
       "type": "richtext",
       "required": true
+    },
+    "ContactInformation1": {
+      "type": "richtext"
     }
   }
 }

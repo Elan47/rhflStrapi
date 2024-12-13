@@ -16,13 +16,13 @@
       "type": "string",
       "required": true
     },
-    "accordian": {
+    "subTitle": {
+      "type": "string"
+    },
+    "Accordian": {
       "type": "component",
       "repeatable": true,
       "component": "accordian.accordian"
-    },
-    "subTitle": {
-      "type": "string"
     }
   }
 }

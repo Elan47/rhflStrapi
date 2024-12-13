@@ -60,6 +60,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sat-center.sat-center"
+    },
+    "BranchIFrame1": {
+      "type": "richtext"
     }
   }
 }
