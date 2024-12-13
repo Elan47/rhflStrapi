@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-12-12T11:19:59.377Z"
+    "x-generation-date": "2024-12-13T07:03:20.103Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -31064,7 +31064,9 @@
                         "BranchLongitude": {
                           "type": "string"
                         },
-                        "BranchIFrame": {},
+                        "BranchIFrame": {
+                          "type": "string"
+                        },
                         "BranchStreet": {
                           "type": "string"
                         },
@@ -32029,7 +32031,9 @@
                     "BranchLongitude": {
                       "type": "string"
                     },
-                    "BranchIFrame": {},
+                    "BranchIFrame": {
+                      "type": "string"
+                    },
                     "BranchStreet": {
                       "type": "string"
                     },
@@ -35862,7 +35866,9 @@
                 ],
                 "example": "string or id"
               },
-              "Description": {},
+              "Description": {
+                "type": "string"
+              },
               "date": {
                 "type": "string",
                 "format": "date-time"
@@ -36539,7 +36545,9 @@
               }
             }
           },
-          "Description": {},
+          "Description": {
+            "type": "string"
+          },
           "date": {
             "type": "string",
             "format": "date-time"
@@ -36730,7 +36738,9 @@
                     }
                   }
                 },
-                "Description": {},
+                "Description": {
+                  "type": "string"
+                },
                 "date": {
                   "type": "string",
                   "format": "date-time"
@@ -36820,7 +36830,9 @@
           "description": {
             "type": "string"
           },
-          "richTxt": {},
+          "richTxt": {
+            "type": "string"
+          },
           "keywords": {
             "type": "string"
           }
@@ -37786,7 +37798,9 @@
               "SectionHeading": {
                 "type": "string"
               },
-              "SectionText": {},
+              "SectionText": {
+                "type": "string"
+              },
               "SectionDownloads": {
                 "type": "array",
                 "items": {
@@ -37974,7 +37988,9 @@
           "SectionHeading": {
             "type": "string"
           },
-          "SectionText": {},
+          "SectionText": {
+            "type": "string"
+          },
           "SectionDownloads": {
             "type": "array",
             "items": {
@@ -39554,7 +39570,9 @@
                 "SectionHeading": {
                   "type": "string"
                 },
-                "SectionText": {},
+                "SectionText": {
+                  "type": "string"
+                },
                 "SectionDownloads": {
                   "type": "array",
                   "items": {
@@ -44012,7 +44030,9 @@
               "FAQName": {
                 "type": "string"
               },
-              "FAQDescription": {},
+              "FAQDescription": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -44085,7 +44105,9 @@
           "FAQName": {
             "type": "string"
           },
-          "FAQDescription": {},
+          "FAQDescription": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -44389,7 +44411,9 @@
                 "FAQName": {
                   "type": "string"
                 },
-                "FAQDescription": {},
+                "FAQDescription": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -44473,7 +44497,9 @@
               "FAQName": {
                 "type": "string"
               },
-              "FAQDescription": {},
+              "FAQDescription": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -44546,7 +44572,9 @@
           "FAQName": {
             "type": "string"
           },
-          "FAQDescription": {},
+          "FAQDescription": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -44850,7 +44878,9 @@
                 "FAQName": {
                   "type": "string"
                 },
-                "FAQDescription": {},
+                "FAQDescription": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -44934,7 +44964,9 @@
               "FAQName": {
                 "type": "string"
               },
-              "FAQDescription": {},
+              "FAQDescription": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -45007,7 +45039,9 @@
           "FAQName": {
             "type": "string"
           },
-          "FAQDescription": {},
+          "FAQDescription": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -45311,7 +45345,9 @@
                 "FAQName": {
                   "type": "string"
                 },
-                "FAQDescription": {},
+                "FAQDescription": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -45395,7 +45431,9 @@
               "FAQName": {
                 "type": "string"
               },
-              "FAQDescription": {},
+              "FAQDescription": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -45468,7 +45506,9 @@
           "FAQName": {
             "type": "string"
           },
-          "FAQDescription": {},
+          "FAQDescription": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -45772,7 +45812,9 @@
                 "FAQName": {
                   "type": "string"
                 },
-                "FAQDescription": {},
+                "FAQDescription": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -45856,7 +45898,9 @@
               "FAQName": {
                 "type": "string"
               },
-              "FAQDescription": {},
+              "FAQDescription": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -45929,7 +45973,9 @@
           "FAQName": {
             "type": "string"
           },
-          "FAQDescription": {},
+          "FAQDescription": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -46233,7 +46279,9 @@
                 "FAQName": {
                   "type": "string"
                 },
-                "FAQDescription": {},
+                "FAQDescription": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -61245,7 +61293,9 @@
               "ContactHeading": {
                 "type": "string"
               },
-              "ContactInformation": {},
+              "ContactInformation": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -61318,7 +61368,9 @@
           "ContactHeading": {
             "type": "string"
           },
-          "ContactInformation": {},
+          "ContactInformation": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -61622,7 +61674,9 @@
                 "ContactHeading": {
                   "type": "string"
                 },
-                "ContactInformation": {},
+                "ContactInformation": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -61706,7 +61760,9 @@
               "FAQName": {
                 "type": "string"
               },
-              "FAQDescription": {},
+              "FAQDescription": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -61779,7 +61835,9 @@
           "FAQName": {
             "type": "string"
           },
-          "FAQDescription": {},
+          "FAQDescription": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -62083,7 +62141,9 @@
                 "FAQName": {
                   "type": "string"
                 },
-                "FAQDescription": {},
+                "FAQDescription": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -63700,7 +63760,9 @@
               "BranchLongitude": {
                 "type": "string"
               },
-              "BranchIFrame": {},
+              "BranchIFrame": {
+                "type": "string"
+              },
               "BranchStreet": {
                 "type": "string"
               },
@@ -63824,7 +63886,9 @@
           "BranchLongitude": {
             "type": "string"
           },
-          "BranchIFrame": {},
+          "BranchIFrame": {
+            "type": "string"
+          },
           "BranchStreet": {
             "type": "string"
           },
@@ -63884,7 +63948,9 @@
                     "BranchLongitude": {
                       "type": "string"
                     },
-                    "BranchIFrame": {},
+                    "BranchIFrame": {
+                      "type": "string"
+                    },
                     "BranchStreet": {
                       "type": "string"
                     },
@@ -64672,7 +64738,9 @@
                 "BranchLongitude": {
                   "type": "string"
                 },
-                "BranchIFrame": {},
+                "BranchIFrame": {
+                  "type": "string"
+                },
                 "BranchStreet": {
                   "type": "string"
                 },
@@ -67280,7 +67348,9 @@
               "ProductName": {
                 "type": "string"
               },
-              "ProductDescription": {},
+              "ProductDescription": {
+                "type": "string"
+              },
               "ProductId": {
                 "type": "string"
               },
@@ -67295,10 +67365,18 @@
                 ],
                 "example": "string or id"
               },
-              "ProductFeatures": {},
-              "ProductEligibility": {},
-              "ProductInterestRatesAndFees": {},
-              "DocumentsRequired": {},
+              "ProductFeatures": {
+                "type": "string"
+              },
+              "ProductEligibility": {
+                "type": "string"
+              },
+              "ProductInterestRatesAndFees": {
+                "type": "string"
+              },
+              "DocumentsRequired": {
+                "type": "string"
+              },
               "ProductIllustration": {
                 "oneOf": [
                   {
@@ -67400,7 +67478,9 @@
           "ProductName": {
             "type": "string"
           },
-          "ProductDescription": {},
+          "ProductDescription": {
+            "type": "string"
+          },
           "ProductId": {
             "type": "string"
           },
@@ -68002,10 +68082,18 @@
               }
             }
           },
-          "ProductFeatures": {},
-          "ProductEligibility": {},
-          "ProductInterestRatesAndFees": {},
-          "DocumentsRequired": {},
+          "ProductFeatures": {
+            "type": "string"
+          },
+          "ProductEligibility": {
+            "type": "string"
+          },
+          "ProductInterestRatesAndFees": {
+            "type": "string"
+          },
+          "DocumentsRequired": {
+            "type": "string"
+          },
           "ProductIllustration": {
             "type": "object",
             "properties": {
@@ -68201,7 +68289,9 @@
                 "ProductName": {
                   "type": "string"
                 },
-                "ProductDescription": {},
+                "ProductDescription": {
+                  "type": "string"
+                },
                 "ProductId": {
                   "type": "string"
                 },
@@ -68334,10 +68424,18 @@
                     }
                   }
                 },
-                "ProductFeatures": {},
-                "ProductEligibility": {},
-                "ProductInterestRatesAndFees": {},
-                "DocumentsRequired": {},
+                "ProductFeatures": {
+                  "type": "string"
+                },
+                "ProductEligibility": {
+                  "type": "string"
+                },
+                "ProductInterestRatesAndFees": {
+                  "type": "string"
+                },
+                "DocumentsRequired": {
+                  "type": "string"
+                },
                 "ProductIllustration": {
                   "type": "object",
                   "properties": {
@@ -68561,7 +68659,9 @@
               "CardTitle": {
                 "type": "string"
               },
-              "CardDescription": {},
+              "CardDescription": {
+                "type": "string"
+              },
               "CardImage": {
                 "oneOf": [
                   {
@@ -68641,7 +68741,9 @@
           "CardTitle": {
             "type": "string"
           },
-          "CardDescription": {},
+          "CardDescription": {
+            "type": "string"
+          },
           "CardImage": {
             "type": "object",
             "properties": {
@@ -69291,7 +69393,9 @@
                 "CardTitle": {
                   "type": "string"
                 },
-                "CardDescription": {},
+                "CardDescription": {
+                  "type": "string"
+                },
                 "CardImage": {
                   "type": "object",
                   "properties": {
@@ -69944,7 +70048,9 @@
               "RepcoTitle": {
                 "type": "string"
               },
-              "RepcoAddress": {},
+              "RepcoAddress": {
+                "type": "string"
+              },
               "RepcoPhone": {
                 "type": "string"
               },
@@ -69960,7 +70066,9 @@
               "RepcoTollFreeNumber": {
                 "type": "string"
               },
-              "AboutUS": {},
+              "AboutUS": {
+                "type": "string"
+              },
               "AboutUSImages": {
                 "type": "array",
                 "items": {
@@ -69975,7 +70083,9 @@
                   "example": "string or id"
                 }
               },
-              "RepcoRegisteredOfficeAddress": {},
+              "RepcoRegisteredOfficeAddress": {
+                "type": "string"
+              },
               "CustomerGrievanceRedressal": {
                 "oneOf": [
                   {
@@ -70103,7 +70213,9 @@
           "RepcoTitle": {
             "type": "string"
           },
-          "RepcoAddress": {},
+          "RepcoAddress": {
+            "type": "string"
+          },
           "RepcoPhone": {
             "type": "string"
           },
@@ -70119,7 +70231,9 @@
           "RepcoTollFreeNumber": {
             "type": "string"
           },
-          "AboutUS": {},
+          "AboutUS": {
+            "type": "string"
+          },
           "AboutUSImages": {
             "type": "array",
             "items": {
@@ -70721,7 +70835,9 @@
               }
             }
           },
-          "RepcoRegisteredOfficeAddress": {},
+          "RepcoRegisteredOfficeAddress": {
+            "type": "string"
+          },
           "CustomerGrievanceRedressal": {
             "type": "object",
             "properties": {
@@ -71304,7 +71420,9 @@
                 "RepcoTitle": {
                   "type": "string"
                 },
-                "RepcoAddress": {},
+                "RepcoAddress": {
+                  "type": "string"
+                },
                 "RepcoPhone": {
                   "type": "string"
                 },
@@ -71320,7 +71438,9 @@
                 "RepcoTollFreeNumber": {
                   "type": "string"
                 },
-                "AboutUS": {},
+                "AboutUS": {
+                  "type": "string"
+                },
                 "AboutUSImages": {
                   "type": "array",
                   "items": {
@@ -71453,7 +71573,9 @@
                     }
                   }
                 },
-                "RepcoRegisteredOfficeAddress": {},
+                "RepcoRegisteredOfficeAddress": {
+                  "type": "string"
+                },
                 "CustomerGrievanceRedressal": {
                   "type": "object",
                   "properties": {
@@ -72684,7 +72806,9 @@
           "title": {
             "type": "string"
           },
-          "description": {}
+          "description": {
+            "type": "string"
+          }
         }
       },
       "SatCenterRequest": {

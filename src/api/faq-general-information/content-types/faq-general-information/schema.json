@@ -16,7 +16,7 @@
       "required": true
     },
     "FAQDescription": {
-      "type": "blocks",
+      "type": "richtext",
       "required": true
     }
   }

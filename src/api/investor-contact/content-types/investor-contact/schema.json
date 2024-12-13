@@ -16,7 +16,7 @@
       "required": true
     },
     "ContactInformation": {
-      "type": "blocks",
+      "type": "richtext",
       "required": true
     }
   }

@@ -694,7 +694,7 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date: Schema.Attribute.DateTime;
-    Description: Schema.Attribute.Blocks;
+    Description: Schema.Attribute.RichText;
     Featured_img: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'> &
@@ -777,7 +777,7 @@ export interface ApiCorporateGovernanceCorporateGovernance
       true
     >;
     SectionHeading: Schema.Attribute.String & Schema.Attribute.Required;
-    SectionText: Schema.Attribute.Blocks;
+    SectionText: Schema.Attribute.RichText;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -924,7 +924,7 @@ export interface ApiFaqGeneralInformationFaqGeneralInformation
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
     FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -954,7 +954,7 @@ export interface ApiFaqHomeLoanGuideHomeLoanProcessAtRhflFaqHomeLoanGuideHomeLoa
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
     FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -984,7 +984,7 @@ export interface ApiFaqHomeLoanGuideSupportingDocumentFaqHomeLoanGuideSupporting
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
     FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -1014,7 +1014,7 @@ export interface ApiFaqHomeLoanGuideTaxBenefitFaqHomeLoanGuideTaxBenefit
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
     FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -1044,7 +1044,7 @@ export interface ApiFaqQueryComplaintFaqQueryComplaint
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
     FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -1478,7 +1478,7 @@ export interface ApiInvestorContactInvestorContact
   };
   attributes: {
     ContactHeading: Schema.Attribute.String & Schema.Attribute.Required;
-    ContactInformation: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    ContactInformation: Schema.Attribute.RichText & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1509,7 +1509,7 @@ export interface ApiInvestorFaqInvestorFaq extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    FAQDescription: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    FAQDescription: Schema.Attribute.RichText & Schema.Attribute.Required;
     FAQName: Schema.Attribute.String & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -1578,7 +1578,7 @@ export interface ApiLocatorBranchLocatorBranch
     BranchCode: Schema.Attribute.String;
     BranchContactDetails: Schema.Attribute.Text;
     BranchEmail: Schema.Attribute.String;
-    BranchIFrame: Schema.Attribute.Blocks;
+    BranchIFrame: Schema.Attribute.RichText;
     BranchIFSC: Schema.Attribute.String;
     BranchLatitude: Schema.Attribute.String;
     BranchLongitude: Schema.Attribute.String;
@@ -1731,7 +1731,7 @@ export interface ApiProductListProductList extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    DocumentsRequired: Schema.Attribute.Blocks;
+    DocumentsRequired: Schema.Attribute.RichText;
     IsASpecialProduct: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<false>;
@@ -1741,13 +1741,13 @@ export interface ApiProductListProductList extends Struct.CollectionTypeSchema {
       'api::product-list.product-list'
     > &
       Schema.Attribute.Private;
-    ProductDescription: Schema.Attribute.Blocks;
-    ProductEligibility: Schema.Attribute.Blocks;
-    ProductFeatures: Schema.Attribute.Blocks;
+    ProductDescription: Schema.Attribute.RichText;
+    ProductEligibility: Schema.Attribute.RichText;
+    ProductFeatures: Schema.Attribute.RichText;
     ProductId: Schema.Attribute.UID & Schema.Attribute.Required;
     ProductIllustration: Schema.Attribute.Media<'images' | 'videos'>;
     ProductImage: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
-    ProductInterestRatesAndFees: Schema.Attribute.Blocks;
+    ProductInterestRatesAndFees: Schema.Attribute.RichText;
     ProductName: Schema.Attribute.String;
     ProductOrder: Schema.Attribute.UID & Schema.Attribute.Required;
     ProductPreviewText: Schema.Attribute.String;
@@ -1773,7 +1773,7 @@ export interface ApiReachUsCardReachUsCard extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    CardDescription: Schema.Attribute.Blocks;
+    CardDescription: Schema.Attribute.RichText;
     CardImage: Schema.Attribute.Media<'images'>;
     CardTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
@@ -1834,7 +1834,7 @@ export interface ApiRepcoBankDetailRepcoBankDetail
     draftAndPublish: true;
   };
   attributes: {
-    AboutUS: Schema.Attribute.Blocks;
+    AboutUS: Schema.Attribute.RichText;
     AboutUSImages: Schema.Attribute.Media<'images', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1852,12 +1852,12 @@ export interface ApiRepcoBankDetailRepcoBankDetail
     Logo: Schema.Attribute.Component<'icon.icon', true>;
     PrivacyPolicy: Schema.Attribute.Media<'files'>;
     publishedAt: Schema.Attribute.DateTime;
-    RepcoAddress: Schema.Attribute.Blocks;
+    RepcoAddress: Schema.Attribute.RichText;
     RepcoEmail: Schema.Attribute.String;
     RepcoFax: Schema.Attribute.String;
     RepcoMobile: Schema.Attribute.String;
     RepcoPhone: Schema.Attribute.String;
-    RepcoRegisteredOfficeAddress: Schema.Attribute.Blocks;
+    RepcoRegisteredOfficeAddress: Schema.Attribute.RichText;
     RepcoTitle: Schema.Attribute.String;
     RepcoTollFreeNumber: Schema.Attribute.String;
     SocialIcons: Schema.Attribute.Component<'icon.icon', true>;

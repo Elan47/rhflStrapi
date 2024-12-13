@@ -16,7 +16,7 @@
       "type": "string"
     },
     "RepcoAddress": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "RepcoPhone": {
       "type": "string"
@@ -34,7 +34,7 @@
       "type": "string"
     },
     "AboutUS": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "AboutUSImages": {
       "type": "media",
@@ -45,7 +45,7 @@
       ]
     },
     "RepcoRegisteredOfficeAddress": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "CustomerGrievanceRedressal": {
       "type": "media",

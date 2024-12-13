@@ -12,7 +12,7 @@
       "type": "text"
     },
     "richTxt": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "keywords": {
       "type": "text"

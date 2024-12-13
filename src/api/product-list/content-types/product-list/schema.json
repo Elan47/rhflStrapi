@@ -16,7 +16,7 @@
       "type": "string"
     },
     "ProductDescription": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "ProductId": {
       "type": "uid",
@@ -31,16 +31,16 @@
       ]
     },
     "ProductFeatures": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "ProductEligibility": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "ProductInterestRatesAndFees": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "DocumentsRequired": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "ProductIllustration": {
       "type": "media",

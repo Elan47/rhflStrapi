@@ -16,7 +16,8 @@
       "required": true
     },
     "SectionText": {
-      "type": "blocks"
+     "type":"richtext"
+
     },
     "SectionDownloads": {
       "allowedTypes": [
