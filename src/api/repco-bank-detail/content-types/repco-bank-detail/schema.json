@@ -91,6 +91,11 @@
     },
     "RepcoRegisteredOfficeAddress": {
       "type": "richtext"
+    },
+    "SocialIconsFloat": {
+      "type": "component",
+      "repeatable": true,
+      "component": "icon.icon"
     }
   }
 }

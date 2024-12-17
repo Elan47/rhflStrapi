@@ -12,25 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CustomerGrievanceRedressal": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "files"
-      ]
-    },
-    "EscalationMatrix": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "files"
-      ]
-    },
     "title": {
       "type": "string",
       "required": true
+    },
+    "files": {
+      "type": "component",
+      "repeatable": true,
+      "component": "file.file"
     }
   }
 }

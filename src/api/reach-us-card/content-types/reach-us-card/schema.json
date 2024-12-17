@@ -15,9 +15,6 @@
     "CardTitle": {
       "type": "string"
     },
-    "CardDescription": {
-      "type": "richtext"
-    },
     "CardImage": {
       "type": "media",
       "multiple": false,

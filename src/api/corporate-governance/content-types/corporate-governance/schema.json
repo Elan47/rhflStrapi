@@ -16,9 +16,6 @@
       "type": "string",
       "required": true
     },
-    "SectionText": {
-      "type": "richtext"
-    },
     "SectionDownloads": {
       "type": "media",
       "multiple": true,
@@ -95,7 +92,7 @@
         "videos"
       ]
     },
-    "SectionText1": {
+    "SectionText": {
       "type": "richtext"
     }
   }

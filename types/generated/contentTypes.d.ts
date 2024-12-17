@@ -780,7 +780,6 @@ export interface ApiCorporateGovernanceCorporateGovernance
     >;
     SectionHeading: Schema.Attribute.String & Schema.Attribute.Required;
     SectionText: Schema.Attribute.RichText;
-    SectionText1: Schema.Attribute.RichText;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -825,6 +824,7 @@ export interface ApiDocumentCollectionDocumentCollection
   extends Struct.CollectionTypeSchema {
   collectionName: 'document_collections';
   info: {
+    description: '';
     displayName: 'DocumentCollection';
     pluralName: 'document-collections';
     singularName: 'document-collection';
@@ -839,6 +839,7 @@ export interface ApiDocumentCollectionDocumentCollection
     DocumentDescription: Schema.Attribute.Text;
     DocumentIcon: Schema.Attribute.String;
     DocumentName: Schema.Attribute.String;
+    img: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1321,8 +1322,7 @@ export interface ApiGrievanceRedressalGrievanceRedressal
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    CustomerGrievanceRedressal: Schema.Attribute.Media<'files'>;
-    EscalationMatrix: Schema.Attribute.Media<'files'>;
+    files: Schema.Attribute.Component<'file.file', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1758,6 +1758,7 @@ export interface ApiProductListProductList extends Struct.CollectionTypeSchema {
     ProductOrder: Schema.Attribute.UID & Schema.Attribute.Required;
     ProductPreviewText: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    Seo: Schema.Attribute.Component<'seo.seo', false>;
     SpecialProductAvailability: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<false>;
@@ -1779,7 +1780,6 @@ export interface ApiReachUsCardReachUsCard extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    CardDescription: Schema.Attribute.RichText;
     CardDescription1: Schema.Attribute.RichText;
     CardImage: Schema.Attribute.Media<'images'>;
     CardTitle: Schema.Attribute.String;
@@ -1868,6 +1868,7 @@ export interface ApiRepcoBankDetailRepcoBankDetail
     RepcoTitle: Schema.Attribute.String;
     RepcoTollFreeNumber: Schema.Attribute.String;
     SocialIcons: Schema.Attribute.Component<'icon.icon', true>;
+    SocialIconsFloat: Schema.Attribute.Component<'icon.icon', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "document-collection",
     "pluralName": "document-collections",
-    "displayName": "DocumentCollection"
+    "displayName": "DocumentCollection",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,14 @@
     },
     "DocumentIcon": {
       "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

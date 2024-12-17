@@ -23,15 +23,20 @@ export default {
     // Override or extend the theme
     theme: {
       colors: {
-        primary100: "#fe0468",
-        primary200: "#fe0468",
-        primary500: "#fe0468",
-        primary600: "#fe0468",
-        primary700: "#fe0468",
-        danger700: "#b72b1a",
-        buttonPrimary500: '#fe0468',
-        buttonPrimary600: '#fe0468',
-        buttonPrimary700: '#fe0468',
+        primary100: "#ffe2eb",  // Light pink
+        primary200: "#ffb3ca",  // Soft pink
+        primary500: "#fe0468",  // Bright pink (base color)
+        primary600: "#d20458",  // Slightly darker pink
+        primary700: "#a00345",  // Deep pink
+
+        danger100: "#fdd8d0",   // Light red
+        danger500: "#e8503a",   // Bright red
+        danger700: "#b72b1a",   // Deep red
+
+        buttonPrimary100: "#ffe2eb",  // Light pink for buttons
+        buttonPrimary500: "#fe0468",  // Bright pink for buttons (same as primary500)
+        buttonPrimary700: "#a00345",  // Deep pink for buttons
+
       },
     },
     // Extend the translations
