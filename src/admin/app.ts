@@ -18,8 +18,8 @@ export default {
     locales: ["en"],
     translations: {
       en: {
-        "Auth.form.welcome.title": "Welcome to Repcohome Dashboard!",
-        "Auth.form.welcome.subtitle": "Log in to access Repcohome dashboard",
+        "Auth.form.welcome.title": "Welcome to Repcohome!",
+        "Auth.form.welcome.subtitle": "Log in to access dashboard",
       
       },
     },
