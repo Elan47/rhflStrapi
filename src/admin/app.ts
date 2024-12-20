@@ -15,7 +15,16 @@ export default {
       favicon: favicon,
     },
     // Add a new locale, other than 'en'
-    // locales: ["fr", "de"],
+    locales: ["en"],
+    translations: {
+      en: {
+        "Auth.form.welcome.title": "Welcome to Your Custom Strapi!",
+        "Auth.form.welcome.subtitle": "Log in to access your customized dashboard",
+        "Auth.form.email.label": "Custom Email Label",
+        "Auth.form.password.label": "Custom Password Label",
+        "Auth.form.button.login": "Custom Login Button"
+      },
+    },
     // Replace the Strapi logo in the main navigation
     menu: {
       logo: MenuLogo,
