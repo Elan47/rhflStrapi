@@ -4,7 +4,8 @@
   "info": {
     "singularName": "auction-sale-file",
     "pluralName": "auction-sale-files",
-    "displayName": "Auction Sale File"
+    "displayName": "Auction Sale File",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,12 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "AuctionNotice": {
-      "allowedTypes": [
-        "files"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
     },
     "State": {
       "type": "enumeration",
@@ -28,7 +29,9 @@
         "Maharashtra",
         "Gujarat",
         "Telangana",
-        "Kerala"
+        "Kerala",
+        "Puducherry",
+        "WestBengal"
       ],
       "required": true
     },
