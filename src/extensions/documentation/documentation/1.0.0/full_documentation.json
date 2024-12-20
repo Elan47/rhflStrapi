@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-12-20T06:43:04.161Z"
+    "x-generation-date": "2024-12-20T10:01:59.919Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -32694,7 +32694,9 @@
                   "Maharashtra",
                   "Gujarat",
                   "Telangana",
-                  "Kerala"
+                  "Kerala",
+                  "Puducherry",
+                  "WestBengal"
                 ]
               },
               "StartDate": {
@@ -33383,7 +33385,9 @@
               "Maharashtra",
               "Gujarat",
               "Telangana",
-              "Kerala"
+              "Kerala",
+              "Puducherry",
+              "WestBengal"
             ]
           },
           "StartDate": {
@@ -33580,7 +33584,9 @@
                     "Maharashtra",
                     "Gujarat",
                     "Telangana",
-                    "Kerala"
+                    "Kerala",
+                    "Puducherry",
+                    "WestBengal"
                   ]
                 },
                 "StartDate": {
@@ -58047,6 +58053,9 @@
                 ],
                 "example": "string or id"
               },
+              "order": {
+                "type": "integer"
+              },
               "locale": {
                 "type": "string"
               },
@@ -58716,6 +58725,9 @@
               }
             }
           },
+          "order": {
+            "type": "integer"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -58895,6 +58907,9 @@
                       }
                     }
                   }
+                },
+                "order": {
+                  "type": "integer"
                 },
                 "createdAt": {
                   "type": "string",

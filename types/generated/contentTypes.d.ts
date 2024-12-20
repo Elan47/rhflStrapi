@@ -572,6 +572,7 @@ export interface ApiAuctionSaleFileAuctionSaleFile
   extends Struct.CollectionTypeSchema {
   collectionName: 'auction_sale_files';
   info: {
+    description: '';
     displayName: 'Auction Sale File';
     pluralName: 'auction-sale-files';
     singularName: 'auction-sale-file';
@@ -602,6 +603,8 @@ export interface ApiAuctionSaleFileAuctionSaleFile
         'Gujarat',
         'Telangana',
         'Kerala',
+        'Puducherry',
+        'WestBengal',
       ]
     > &
       Schema.Attribute.Required;
@@ -1394,6 +1397,7 @@ export interface ApiHomePageCarouselHomePageCarousel
       'api::home-page-carousel.home-page-carousel'
     > &
       Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.Unique;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
