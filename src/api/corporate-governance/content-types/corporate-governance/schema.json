@@ -94,6 +94,9 @@
     },
     "SectionText": {
       "type": "richtext"
+    },
+    "table": {
+      "type": "json"
     }
   }
 }

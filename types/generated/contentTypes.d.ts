@@ -713,6 +713,35 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiBoardOfDirectorBoardOfDirector
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'board_of_directors';
+  info: {
+    displayName: 'Board of Director';
+    pluralName: 'board-of-directors';
+    singularName: 'board-of-director';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::board-of-director.board-of-director'
+    > &
+      Schema.Attribute.Private;
+    profile: Schema.Attribute.Component<'profile.profile', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCareerCareer extends Struct.CollectionTypeSchema {
   collectionName: 'careers';
   info: {
@@ -783,6 +812,7 @@ export interface ApiCorporateGovernanceCorporateGovernance
     >;
     SectionHeading: Schema.Attribute.String & Schema.Attribute.Required;
     SectionText: Schema.Attribute.RichText;
+    table: Schema.Attribute.JSON;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1366,6 +1396,34 @@ export interface ApiGuidelineValueGuidelineValue
     StateName: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHomeBannerHomeBanner extends Struct.CollectionTypeSchema {
+  collectionName: 'home_banners';
+  info: {
+    displayName: 'Home Banner';
+    pluralName: 'home-banners';
+    singularName: 'home-banner';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banners: Schema.Attribute.Component<'banner.banner', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-banner.home-banner'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2651,6 +2709,7 @@ declare module '@strapi/strapi' {
       'api::auction-sale-notice.auction-sale-notice': ApiAuctionSaleNoticeAuctionSaleNotice;
       'api::bids-digitization.bids-digitization': ApiBidsDigitizationBidsDigitization;
       'api::blog.blog': ApiBlogBlog;
+      'api::board-of-director.board-of-director': ApiBoardOfDirectorBoardOfDirector;
       'api::career.career': ApiCareerCareer;
       'api::corporate-governance.corporate-governance': ApiCorporateGovernanceCorporateGovernance;
       'api::disclosed-under-regulation-30.disclosed-under-regulation-30': ApiDisclosedUnderRegulation30DisclosedUnderRegulation30;
@@ -2670,6 +2729,7 @@ declare module '@strapi/strapi' {
       'api::gallery.gallery': ApiGalleryGallery;
       'api::grievance-redressal.grievance-redressal': ApiGrievanceRedressalGrievanceRedressal;
       'api::guideline-value.guideline-value': ApiGuidelineValueGuidelineValue;
+      'api::home-banner.home-banner': ApiHomeBannerHomeBanner;
       'api::home-page-carousel.home-page-carousel': ApiHomePageCarouselHomePageCarousel;
       'api::intimation-to-stock-exchange.intimation-to-stock-exchange': ApiIntimationToStockExchangeIntimationToStockExchange;
       'api::investor-calendar.investor-calendar': ApiInvestorCalendarInvestorCalendar;

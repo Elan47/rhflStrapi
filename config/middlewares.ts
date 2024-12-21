@@ -35,7 +35,6 @@ export default [
   'strapi::query',
   'strapi::body',
   'global::uploadRestriction', //custom middleware file upload restrict
-
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
